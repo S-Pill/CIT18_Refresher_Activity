@@ -1,0 +1,232 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #78a2cc;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: var(--main-white);
+    color: var(--main-gray);
+}
+
+header {
+    background: linear-gradient(to right, #45567d, #78a2cc);
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+header h1, header p {
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+nav {
+    background: var(--main-gray);
+    color: var(--main-white);
+    overflow: hidden;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--main-white);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 40px;
+    background: var(--main-white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    border-bottom: 2px solid var(--main-blue);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: var(--main-blue);
+}
+
+p {
+    margin: 10px 0;
+}
+
+#education .education-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#education h3 {
+    color: var(--main-red);
+}
+
+#dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background: var(--main-gray);
+    color: var(--main-white);
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#dark-mode-toggle:hover {
+    background: var(--main-blue);
+}
+
+#skills p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#projects .project-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: var(--main-white);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: var(--main-gray);
+    text-align: center;
+}
+
+#projects .project-item h3 {
+    color: var(--main-red);
+}
+
+#projects .project-item .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--main-blue);
+    color: var(--main-white);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#projects .project-item .btn:hover {
+    background-color: var(--main-gray);
+}
+
+body.dark-mode {
+    background: var(--main-gray);
+    color: var(--main-white);
+}
+
+body.dark-mode header {
+    background: var(--main-blue);
+}
+
+body.dark-mode nav {
+    background: var(--main-gray);
+}
+
+body.dark-mode nav ul li a {
+    color: var(--main-white);
+}
+
+body.dark-mode h2 {
+    border-bottom: 2px solid var(--main-red);
+    color: var(--main-red);
+}
+
+body.dark-mode section {
+    background: var(--main-gray);
+    color: var(--main-white);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+body.dark-mode #dark-mode-toggle {
+    background: var(--main-gray);
+}
+
+body.dark-mode #projects .project-item {
+    background: var(--main-gray);
+    color: var(--main-white);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+body.dark-mode #projects .project-item h3 {
+    color: var(--main-red);
+}
+
+.contact-section {
+    background-color: var(--main-white);
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-section-header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--main-blue);
+}
+
+.contact-details {
+    text-align: center;
+}
+
+.contact-links {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.contact-links .btn {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: var(--main-blue);
+    color: var(--main-white);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-links .btn:hover {
+    background-color: var(--main-gray);
+}
+
+.contact-details p {
+    margin-bottom: 10px;
+    text-align: center;
+}
